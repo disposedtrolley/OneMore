@@ -412,11 +412,6 @@ namespace River.OneMoreAddIn
 			=> await factory.Run<ImportWebCommand>();
 
 
-		[Command("ribImportOutlookTasksButton_Label", Keys.None, "ribRemindersMenu")]
-		public async Task ImportOutlookTasksCmd(IRibbonControl control)
-			=> await factory.Run<ImportOutlookTasksCommand>();
-
-
 		[Command("ribIncreaseFontSizeButton_Label", Keys.Control | Keys.Alt | Keys.Oemplus, "ribEditMenu")]
 		public async Task IncreaseFontSizeCmd(IRibbonControl control)
 			=> await factory.Run<IncreaseFontSizeCommand>();
